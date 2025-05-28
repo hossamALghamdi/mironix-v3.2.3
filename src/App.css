@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0a0a14;
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative; /* Ensure proper stacking context */
+}
+
+/* Remove default styling */
+.App-logo {
+  display: none;
+}
+
+.App-header {
+  display: none;
+}
+
+/* Add smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add responsive container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Add responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Add responsive typography */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* Add responsive buttons */
+button {
+  cursor: pointer;
+}
+
+/* Add responsive links */
+a {
+  text-decoration: none;
+}
+
+/* Ensure content sections have proper z-index */
+section {
+  position: relative;
+  z-index: 1;
+}
