@@ -1,0 +1,38 @@
+/* ... existing code ... */
+@font-face {
+  font-family: 'FlyMeToTheMoon';
+  src: url('/fonts/Pwflymetothemoon-llqq.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Add global font family */
+html, body {
+  font-family: 'Verdana, Geneva, sans-serif';
+}
+
+/* Add snap scrolling for mobile devices */
+@media (max-width: 768px) {
+  html, body {
+    scroll-behavior: smooth;
+  }
+  
+  main {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+/* ... existing code ... */

@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Primary Colors */
+    --primary-background: #f5b314;
+    --primary-foreground: #ffffff;
+    --primary-light: #f7c54a;
+    --primary-dark: #d99500;
+
+    /* Secondary Colors */
+    --secondary-background: #040819;
+    --secondary-foreground: #d2d2d2;
+    --secondary-light: #0c1225;
+    --secondary-dark: #020410;
+
+    /* Accent Colors */
+    --accent-color: #5948b2;
+    --accent-foreground: #ffffff;
+    --accent-light: #a981ff;
+    --accent-dark: #3a2e7a;
+
+    /* Border Colors */
+    --border-primary: #ffffff99;
+    --border-secondary: #ffffff19;
+    --border-light: #ffffff;
+    --border-dark: #333333;
+  }
+  
+  body {
+    @apply bg-secondary-background text-secondary-foreground;
+    font-family: var(--font-poppins, sans-serif);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-staatliches, sans-serif);
+  }
+}
+
+@layer components {
+  .gradient-card {
+    @apply bg-gradient-to-br from-[#efefef14] via-[#ffffff14] to-[#fafafa3b] border-2 border-solid border-[#ffffff99] border-opacity-60 rounded-xl;
+  }
+  
+  .section-title {
+    @apply text-[#d2d2d2] text-6xl md:text-7xl font-staatliches tracking-widest mb-16 text-center;
+  }
+}
+
+@layer utilities {
+  /* Background Color Utilities */
+  .bg-primary-yellow {
+    background-color: var(--primary-background);
+  }
+
+  .bg-primary-light {
+    background-color: var(--primary-light);
+  }
+
+  .bg-primary-dark {
+    background-color: var(--primary-dark);
+  }
+
+  .bg-secondary-dark-blue {
+    background-color: var(--secondary-background);
+  }
+
+  .bg-secondary-light {
+    background-color: var(--secondary-light);
+  }
+
+  .bg-secondary-dark {
+    background-color: var(--secondary-dark);
+  }
+
+  .bg-accent-purple {
+    background-color: var(--accent-color);
+  }
+
+  .bg-accent-light {
+    background-color: var(--accent-light);
+  }
+
+  .bg-accent-dark {
+    background-color: var(--accent-dark);
+  }
+
+  /* Text Color Utilities */
+  .text-primary-white {
+    color: var(--primary-foreground);
+  }
+
+  .text-secondary-gray {
+    color: var(--secondary-foreground);
+  }
+
+  .text-accent-white {
+    color: var(--accent-foreground);
+  }
+
+  /* Border Color Utilities */
+  .border-primary-white {
+    border-color: var(--border-primary);
+  }
+
+  .border-secondary-white {
+    border-color: var(--border-secondary);
+  }
+
+  .border-light {
+    border-color: var(--border-light);
+  }
+
+  .border-dark {
+    border-color: var(--border-dark);
+  }
+  
+  /* Gradient Utilities */
+  .bg-card-gradient {
+    background: linear-gradient(141deg, rgba(239, 239, 239, 0.08) 0%, rgba(255, 255, 255, 0.08) 50%, rgba(250, 250, 250, 0.23) 100%);
+  }
+  
+  .bg-primary-gradient {
+    background: linear-gradient(112deg, #f5b314 0%, #f5b314 100%);
+  }
+  
+  .bg-accent-gradient {
+    background: linear-gradient(214deg, rgba(89, 72, 178, 0.2) 0%, rgba(169, 129, 255, 0.2) 100%);
+  }
+}

@@ -1,0 +1,17 @@
+@keyframes gradient-move-slow {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+@keyframes gradient-move-fast {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+.animated-gradient-bg {
+  background: linear-gradient(270deg, #c81b1b, #f5b314, #4b2f99, #c81b1b, #f5b314);
+  background-size: 400% 400%;
+  animation: gradient-move-slow 8s linear infinite;
+  transition: animation 0.2s;
+}
+.animated-gradient-bg:hover {
+  animation: gradient-move-fast 1.2s linear infinite;
+}
