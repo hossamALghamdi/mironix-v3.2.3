@@ -1,3 +1,4 @@
+```plaintext:///Users/ballzz/Documents/mironix/mironix v3.2-2/.gitignore
 node_modules/
 npm-debug.log*
 yarn-debug.log*
@@ -18,45 +19,6 @@ pids
 .env.production.local
 .DS_Store
 coverage/
-logs/
-*.log
-.cache/
-.parcel-cache/
-.eslintcache
-*.lcov
-.eslintcache
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-<<<<<<< HEAD
-.env.build
-# IDE and editor files
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-# OS generated files
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-# Temporary folders
-tmp/
-temp/
-# Optional npm cache directory
-.npm
-# Optional REPL history
-.node_repl_history
-# Output of 'npm pack'
-*.tgz
-# Yarn Integrity file
-.yarn-integrity
-# Storybook build outputs
-.storybook-out
-=======
->>>>>>> 2a73af41d0d28c781b4628bcdc6df18c0488ef90
+
 # Exclude large file
-next-swc.darwin-arm64.n
+node_modules/@next/swc-darwin-arm64/
